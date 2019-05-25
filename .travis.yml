@@ -5,7 +5,7 @@ cache:
     - node_modules
   yarn: true
 addons:
-  postgresql: "9.6"
+  postgresql: '9.6'
 install:
   - bundle install
   - nvm install 8.11.2
@@ -21,7 +21,7 @@ script:
 deploy:
   provider: heroku
   api_key:
-    secure: ADDYDfOGlYQOr7trnmq1xbShIuGvDCJ1jscMbm4VoXgQ9LUPb3powuFrsMBSoNU7PaC0Mgxzf2UaTJT5+JBwz4yjVs7YgQV602CmWP367PBw0nXZHK9JYwsIWpJntDK/UnBxhYa4ewQESZc4LI6NK9qwOcITrzUoL8JDNPeAFo2+WTAFjPo9VigAIju4EMOnFagHt0Ay6Vt40kAGEpyeWfVj60ARYX8HHTnNF2oFIVDD9ZDa9QbeL/J6JqTUR/+qk4ivtNjnWjq9OiPfSeMR6pYaH4BNEC4qTq6ZtmadvGgWO7VgwGiQ0sz+v6rOKlrszQipYESZTmiwjByWK9iOrxul1DP9rWgqoY8WM9aTc3cZqZkUXH4hyFCki2go6/Cb2c0/+du8eMmDjp+J2Xi3B1H6DW+g0KdDqWqu/qni3Ndm2GNeJRZNdLgGNM23izWiPu/AlT2Bk/vMuEtVw2qgpwt3P6YSn95jqq88aTuS4hOU/Aq3mUm+w+TNpmglxkWtXUstghiNCHNw/cm3us/nuuq0OZPFMLt1Hg6R7FWFygnw7q1dfdt9hnw+oPEriIsJcNK0Kz1ISSsvefZfKfdyX6khgSCFdqZ5P8pCFHdIUKDUykdAcl27Phc2o4iCvo1Hn2AYzbQzv/1ONRcSd9D6qqnXVkufBpZ6CG/Q/AoILpc=
-  app: govuk-rails-boilerplate
+    secure: M7nBYOA/gnjz/4p4D6zkzKjeyEmaRo76oJ+3g5FHnUUFd3Kyf/RJNWhcl9vqEq3lzKueI1CdQtFkDZRVouYNY+vdv45nR6C9J6Tr1tWPJUaiFt2LI8Ta4mKexpCkbNlVuHxGiO+8TjXtYRajBBz2Bzvgcvje/XieKIN/QnuY0uTtLV3WicZlizAdA2yersOtzd0jq2sVY8UGlL0bHjF6C3PrG54bmFNgX/smJsWoCxTr1w9heuwkBUJMSZCtzwI3FrBTU+ZAs3sKCCI8KbKAL7p4sRZ6eWMD4oxF1D4rSe10/VRfW1OBVBMY0fmk/01EcFl5KKB1Y0wf3dOWhO0oMvOeDu3J57JPqNPKTk9WweE6Kmg5EGM0vnyzJNVn/gdsH2JOrfsUPYXxRAwypsMcXB+ldntWRK4/M37L+rNwYhFjRVk1wmL5id5wxGTLuOJGosTCjujSuOIyqbPk7TjAwUvJoAAsEBWw2lbhmovcBSmgo8kx2xhA1q3fBC0SBJKHX5sHg4okWb3sQgjGci+0QL4BAI1+RG9ZflzVrCY4vny7jF1RdNn+B3gkNJb/F5M6+70Y3xOIZELr2SfnrKl3CRN93CSBKIspmYFJJkadR607fNUkjrd/t9ZZpQMLE6lihCeMpIdQMMXxMpS11OcsYKB3bWEorrIEWlZbM1yBdIo=
+  app: eduk-cms-spike
   on:
-    repo: DFE-Digital/govuk-rails-boilerplate
+    repo: dankmitchell/eduk-cms-spike
