@@ -1,10 +1,13 @@
 <!DOCTYPE html>
 <html lang="en" class="govuk-template ">
   <head>
-    <title>EDUK CMS Spike</title>
+    <title><%= @page.seo_title %> - <%= current_account.name %></title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
     <%= canonical_tag %>
+    <%= tag :meta, name: 'description', content: @page.description %>
+    <%= tag :meta, name: 'og:title', content: @page.seo_title %>
+    <%= tag :meta, name: 'og:description', content: @page.description %>
     <%= tag :meta, name: 'viewport', content: 'width=device-width, initial-scale=1' %>
     <%= tag :meta, property: 'og:image', content: '/assets/images/govuk-opengraph-image.png' %>
     <%= tag :meta, name: 'theme-color', content: '#0b0c0c' %>
@@ -41,21 +44,9 @@
           <% end %>
         </div>
         <div class="govuk-header__content">
-          <%= link_to "EDUK Spike CMS", "/", class: "govuk-header__link govuk-header__link--service-name" %>
+          <%= link_to current_account.name, "/", class: "govuk-header__link govuk-header__link--service-name" %>
           <button type="button" role="button" class="govuk-header__menu-button js-header-toggle" aria-controls="navigation" aria-label="Show or hide Top Level Navigation">Menu</button>
-          <nav>
-            <ul id="navigation" class="govuk-header__navigation " aria-label="Top Level Navigation">
-              <li class="govuk-header__navigation-item govuk-header__navigation-item--active">
-                <%= link_to "Navigation item 1", "#", class: "govuk-header__link" %>
-              </li>
-              <li class="govuk-header__navigation-item">
-                <%= link_to "Navigation item 2", "#", class: "govuk-header__link" %>
-              </li>
-              <li class="govuk-header__navigation-item">
-                <%= link_to "Navigation item 3", "#", class: "govuk-header__link" %>
-              </li>
-            </ul>
-          </nav>
+          <%= render 'demo/shared/navigation' %>
         </div>
       </div>
     </header>

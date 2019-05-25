@@ -1,0 +1,6 @@
+<% presenter = Spina::MenuPresenter.new(Spina::Page.all) %>
+
+<% presenter.list_css = 'govuk-header__navigation' %>
+<% presenter.list_item_css = 'govuk-header__navigation-item' %>
+<% presenter.link_tag_css = 'govuk-header__link' %>
+<%= presenter.to_html %>
