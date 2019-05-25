@@ -1,6 +1,6 @@
-[![Build Status](https://travis-ci.org/DFE-Digital/govuk-rails-boilerplate.svg?branch=master)](https://travis-ci.com/DFE-Digital/govuk-rails-boilerplate) [![Greenkeeper badge](https://badges.greenkeeper.io/DFE-Digital/govuk-rails-boilerplate.svg)](https://greenkeeper.io/)
+[![Build Status](https://travis-ci.org/dankmitchell/eduk-cms-spike.svg?branch=master)](https://travis-ci.org/dankmitchell/eduk-cms-spike) [![Greenkeeper badge](https://badges.greenkeeper.io/dankmitchell/eduk-cms-spike.svg)](https://greenkeeper.io/)
 
-# GOV.UK Rails Boilerplate
+# EDUK CMS Spike
 
 ## Prerequisites
 
@@ -16,15 +16,6 @@
 3. Run `bin/rails db:setup` to set up the database development and test schemas, and seed with test data
 4. Run `bundle exec rails server` to launch the app on http://localhost:3000
 5. Run `./bin/webpack-dev-server` in a separate shell for faster compilation of assets
-
-## Whats included in this boilerplate?
-
-- Rails 5.2 with Webpacker
-- [GOV.UK Frontend](https://github.com/alphagov/govuk-frontend)
-- [GOV.UK Lint](https://github.com/alphagov/govuk-lint)
-- RSpec
-- Dotenv (managing environment variables)
-- Travis with Heroku deployment
 
 ## Running specs, linter(without auto correct) and annotate models and serializers
 ```
