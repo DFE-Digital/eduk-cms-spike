@@ -21,8 +21,9 @@ gem 'uglifier', '>= 1.3.0'
 # Transpile app-like JavaScript. Read more: https://github.com/rails/webpacker
 gem 'webpacker'
 
-# Use ActiveStorage variant
-# gem 'mini_magick', '~> 4.8'
+# Use ActiveStorage
+gem 'mini_magick', '~> 4.8'
+gem 'azure-storage', require: false
 
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.1.0', require: false
